@@ -89,13 +89,13 @@ window.addEventListener("load", function(){
 			}
 		}
 
-		if(wint <= pageList[0].offsetTop){
+		if(wint <= pageList[1].offsetTop - winh / 4){
 			n=1;
 		}
-		else if(wint <= pageList[1].offsetTop){
+		else if(wint <= pageList[2].offsetTop - winh / 4){
 			n=2;
 		}
-		else if(wint <= pageList[3].offsetTop){
+		else if(wint <= pageList[3].offsetTop - winh / 4){
 			n=3;
 		}
 		else{

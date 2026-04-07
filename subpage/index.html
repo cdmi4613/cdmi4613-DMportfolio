@@ -46,68 +46,91 @@
 						<div class="sub_title">
 							<span>- Work Projects</span>
 						</div>
+
 						<div class="collaboration_container">
 							<div id="collaboration_slider">
 								<div class="swiper collaborationSwiper">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<span>Work 01</span>
-											<p>CRM-고객관리시스템<br> </p>
-											<span class="ss">
-												<span class="ss">
-													기간: 3~4개월<br>
-													역할: 기획, 디자인 및 UI 구현, 프론트엔드 개발, API 연동, 유지보수<br>
-													기술스택: React, TypeScript, SCSS<br>
-													담당 기능: 리스트/상세/수정/파일 처리 UI 구현<br>
-													문제 해결: 단계별 모달 분기 로직 개선, 상태 관리 및 예외 케이스 대응<br>
-													성과: 비즈니스 로직 개선
-												</span>
 
-										</div>
 										<div class="swiper-slide">
-											<span>Resource1</span>
-											<p>Parallax UI 예제<br> </p>
-											<span class="ss">
-												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
+											<div class="project_text_box">
+												<span class="work_number">Work 01</span>
+												<p class="project_title">CRM-고객관리시스템</p>
+
+												<div class="project_info">
+													<div class="info_row">
+														<span class="label">기간</span>
+														<span class="value">3~4개월</span>
+													</div>
+													<div class="info_row">
+														<span class="label">역할</span>
+														<span class="value">기획, 디자인 및 UI 구현, 프론트엔드 개발, API 연동,
+															유지보수</span>
+													</div>
+													<div class="info_row">
+														<span class="label">기술스택</span>
+														<span class="value">React, TypeScript, SCSS</span>
+													</div>
+													<div class="info_row">
+														<span class="label">담당 기능</span>
+														<span class="value">리스트/상세/수정/파일 처리 UI 구현</span>
+													</div>
+													<div class="info_row">
+														<span class="label">문제 해결</span>
+														<span class="value">단계별 모달 분기 로직 개선, 상태 관리 및 예외 케이스 대응</span>
+													</div>
+													<div class="info_row">
+														<span class="label">성과</span>
+														<span class="value">비즈니스 로직 개선</span>
+													</div>
+												</div>
+											</div>
 										</div>
+
 										<div class="swiper-slide">
-											<span>Resource1</span>
-											<p>Parallax UI 예제<br> </p>
-											<span class="ss">
-												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
+											<div class="project_text_box">
+												<span class="work_number">Work 02</span>
+												<p class="project_title">실시간 데이터 모니터링 시스템</p>
+
+												<div class="project_info">
+													<div class="info_row">
+														<span class="label">기간</span>
+														<span class="value">2주~</span>
+													</div>
+													<div class="info_row">
+														<span class="label">역할</span>
+														<span class="value">프론트엔드 개발, API 연동, 유지보수</span>
+													</div>
+													<div class="info_row">
+														<span class="label">기술스택</span>
+														<span class="value">React, Chart.js</span>
+													</div>
+													<div class="info_row">
+														<span class="label">담당 기능</span>
+														<span class="value">실시간 차트 시각화 / 히스토리 데이터 검색 / 통합 수치 모니터링 UI
+															구현</span>
+													</div>
+													<div class="info_row">
+														<span class="label">문제 해결</span>
+														<span class="value">화면 목적에 따른 페이지 분리, 검색 기반 이력 조회 기능 구현</span>
+													</div>
+													<div class="info_row">
+														<span class="label">성과</span>
+														<span class="value">데이터 모니터링 흐름 개선 및 사용자 확인 편의성 향상</span>
+													</div>
+												</div>
+											</div>
 										</div>
-										<div class="swiper-slide">
-											<span>Resource1</span>
-											<p>Parallax UI 예제<br> </p>
-											<span class="ss">
-												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
-										</div>
-										<div class="swiper-slide">
-											<span>Resource1</span>
-											<p>Parallax UI 예제<br> </p>
-											<span class="ss">
-												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
-										</div>
-										<div class="swiper-slide">
-											<span>Resource1</span>
-											<p>Parallax UI 예제<br> </p>
-											<span class="ss">
-												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
-										</div>
-										<div class="swiper-slide">
-											<span>Resource1</span>
-											<p>Parallax UI 예제<br> </p>
-											<span class="ss">
-												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
-										</div>
+
 									</div>
+
+									<div class="collaboration-pagination"></div>
 									<div class="swiper-scrollbar collaboration-scrollbar"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!--  -->
 
 				<!-- 메인프로젝트 슬라이더 -->
 				<!-- <section id="mainProject" class="page main-project">
@@ -236,9 +259,11 @@
 						<ul class="right">
 							<li>React Project2</li>
 							<ul>
-								<li>Axios, Router, React Hook, Lifecycle, Redux-Toolkit, localStorage, customHook 등을 적용한
+								<li>Axios, Router, React Hook, Lifecycle, Redux-Toolkit, localStorage, customHook 등을
+									적용한
 									프로젝트입니다. </li>
-								<li><a href="https://cdmi4613.github.io/ShopMainproject1" target="blank">바로가기</a></li>
+								<li><a href="https://cdmi4613.github.io/ShopMainproject1" target="blank">바로가기</a>
+								</li>
 							</ul>
 						</ul>
 					</div>
@@ -403,7 +428,8 @@
 
 											<span>Resource2</span>
 											<p>AJAX 예제<br> </p>
-											<span class="ss">React를 이용한 AJAX 방식으로 React Axios <br>라이브러리를 활용한 예제</span>
+											<span class="ss">React를 이용한 AJAX 방식으로 React Axios <br>라이브러리를 활용한
+												예제</span>
 											<a href="https://cdmi4613.github.io/opensource2" target="blank"
 												class="web">Web
 												바로가기</a>

@@ -151,41 +151,40 @@ window.addEventListener("load", function(){
         // ----------------
 
         // 메인 슬라이드 - 텍스트형
-        let collaborationSwiper = new Swiper(".collaborationSwiper", {
+let collaborationSwiper = new Swiper(".collaborationSwiper", {
+    slidesPerView: 1,
+    // spaceBetween: 30,
+    // loop: true,
+    // loopedSlides: 1,
+    pagination: { 
+        el: ".collaboration-pagination",
+        type: "fraction",
+    },
+    
+    scrollbar: {
+        el: '.collaboration-scrollbar',
+        draggable: true,
+        hide: false
+    },
+    
+    navigation: {
+        nextEl: ".collaborationSwiper .controller ul li a.next",
+        prevEl: ".collaborationSwiper .controller ul li a.prev",
+    },
+    // autoplay: {
+    // delay: 2000,
+    // },
+    breakpoints: { 
+        100:{
             slidesPerView: 1,
-            // spaceBetween: 30,
-            // loop: true,
-            // loopedSlides: 1,
-            pagination: { 
-                el: ".collaboration-pagination",
-                type: "fraction",
-            },
-            
-            scrollbar: {
-                el: '.collaboration-scrollbar',
-                draggable: true,
-                hide: false
-            },
-            
-            navigation: {
-                nextEl: ".collaborationSwiper .controller ul li a.next",
-                prevEl: ".collaborationSwiper .controller ul li a.prev",
-            },
-            
-            // autoplay: {
-            // delay: 2000,
-            // },
-            breakpoints: { 
-                100:{
-                    slidesPerView: 1,
-                },
-                800:{
-                    slidesPerView: 1,
-                },
-                1300:{
-                    slidesPerView: 1,
-                },
-            }
-        });
+        },
+        800:{
+            slidesPerView: 1,
+        },
+        1300:{
+            slidesPerView: 1,
+        },
+    }
+});
         // 
 })

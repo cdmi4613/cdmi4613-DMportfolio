@@ -598,4 +598,464 @@ header .header_inner .backPage a{
 	}
 }
 
+/* 메인프로젝트 슬라이더 */
+/* #mainProject{
+	padding: 150px 0 100px;
+}
 
+#mainProject .main_project_inner{
+	max-width: 1400px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+#mainProject .sub_title{
+	font-size: 1.5em;
+	font-weight: 600;
+	font-family:'Noto Sans KR', sans-serif;
+	color: #ededed;
+	margin-bottom: 20px;
+}
+
+#mainProject strong{
+	display: block;
+	margin-bottom: 60px;
+}
+
+.crm_project_wrap{
+	display: flex;
+	width: 100%;
+	height: 580px;
+	background-color: #3a3a3a;
+	overflow: hidden;
+}
+
+.crm_image_area{
+	position: relative;
+	width: 70%;
+	height: 100%;
+	flex-shrink: 0;
+	background-color: #222;
+	overflow: hidden;
+}
+
+.crm_text_area{
+	width: 36%;
+	height: 100%;
+	padding: 42px 36px;
+	box-sizing: border-box;
+	background-color: #3d3d3d;
+	display: flex;
+	flex-direction: column;
+}
+
+.crmSwiper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.crmSwiper .swiper-wrapper{
+	height: 100%;
+}
+
+.crmSwiper .swiper-slide{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #222;
+}
+
+.crmSwiper .swiper-slide img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+}
+
+.crm_text_area{
+	width: calc(100% - 700px);
+	height: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+	background-color: #3d3d3d;
+	display: flex;
+	flex-direction: column;
+}
+
+.crm_project_name{
+	font-size: 2.2em;
+	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.crm_project_role{
+	font-size: 1.05em;
+	font-weight: 300;
+	color: #ededed;
+	line-height: 1.8;
+	margin-bottom: 25px;
+}
+
+.crm_project_stack{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+	min-height: 42px;
+}
+
+.crm_project_stack img{
+	width: 42px;
+	height: 42px;
+	object-fit: contain;
+}
+
+.crm_project_desc{
+	margin-bottom: 40px;
+	min-height: 120px;
+}
+
+.crm_project_desc p{
+	font-size: 1em;
+	font-weight: 300;
+	color: #ededed;
+	line-height: 1.8;
+	word-break: keep-all;
+}
+
+.crm_detail_btn{
+	position: relative;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 300;
+	color: #ededed;
+	padding: 15px 50px 15px 20px;
+	border: 1px solid rgba(255,255,255,.4);
+	border-radius: 10px;
+	width: fit-content;
+	overflow: hidden;
+	transition: color 0.4s ease;
+	margin-top: auto;
+}
+
+.crm_detail_btn::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background-color: rgba(255,255,255,.4);
+	transition: height 0.4s ease;
+	z-index: -1;
+}
+
+.crm_detail_btn:hover::before{
+	height: 100%;
+}
+
+.crm_detail_btn:hover{
+	color: #ececec;
+	font-weight: 900;
+}
+
+.crm_detail_btn::after{
+	content: "";
+	position: absolute;
+	right: 10px;
+	background: url(../image/arrow.png) no-repeat bottom 12px right;
+	background-size: 30px;
+	width: 40px;
+	height: 40px;
+}
+
+.crm_prev,
+.crm_next{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 52px;
+	height: 52px;
+	z-index: 20;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #333;
+	border: 2px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+}
+
+.crm_prev{
+	left: 16px;
+}
+
+.crm_next{
+	right: 16px;
+}
+
+.crm_prev:hover,
+.crm_next:hover{
+	background-color: #444;
+	transform: translateY(-50%) scale(1.05);
+}
+
+.crm_prev::after,
+.crm_next::after{
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	box-sizing: border-box;
+}
+
+.crm_next::after{
+	transform: rotate(45deg);
+	margin-left: -2px;
+}
+
+.crm_prev::after{
+	transform: rotate(-135deg);
+	margin-left: 2px;
+}
+
+.crm_pagination{
+	position: absolute !important;
+	left: 50% !important;
+	bottom: 16px !important;
+	transform: translateX(-50%) !important;
+	width: max-content !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	z-index: 30;
+}
+
+.crm_pagination .swiper-pagination-bullet{
+	width: 12px;
+	height: 12px;
+	margin: 0 !important;
+	border-radius: 50%;
+	background: #333;
+	opacity: 1;
+	border: 2px solid rgba(255,255,255,0.35);
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+}
+
+.crm_pagination .swiper-pagination-bullet-active{
+	background: #fff;
+	border: 2px solid #333;
+	box-shadow: 0 0 0 2px #fff;
+	transform: scale(1.08);
+}
+
+@media only screen and (max-width: 1024px){
+	.crm_project_wrap{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.crm_image_area{
+		width: 100%;
+		height: 380px;
+	}
+
+	.crm_text_area{
+		width: 100%;
+		min-height: 320px;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	#mainProject{
+		padding: 120px 0 80px;
+	}
+
+	.crm_image_area{
+		height: 260px;
+	}
+
+	.crm_text_area{
+		padding: 24px 20px;
+	}
+
+	.crm_project_name{
+		font-size: 1.7em;
+	}
+
+	.crm_project_role,
+	.crm_project_desc p{
+		font-size: 0.95em;
+	}
+
+	.crm_project_stack img{
+		width: 36px;
+		height: 36px;
+	}
+} */
+/*  */
+
+/* 메인프로젝트 텍스트형 슬라이드 css */
+#collaborationProject .collaborationProject_inner{
+	margin: 0 auto;
+    max-width: 1200px;
+    padding: 150px 0em;
+}
+/* @media only screen and (max-width: 700px) {
+	#collaborationProject .collaborationProject_inner{
+		padding: 150px 4em;
+	}
+} */
+#collaborationProject .collaborationProject_inner .sub_title{
+	font-size: 1.5em;
+	font-weight: 600;
+	font-family:'Noto Sans KR', sans-serif;
+	color: #ededed;
+}
+.collaboration_design_title{
+	font-size: 1.5em;
+	font-weight: 600;
+	font-family:'Noto Sans KR', sans-serif;
+	color: #ededed;
+	margin-top: 100px;
+}
+#collaborationProject .collaborationProject_inner .sub_title{
+	margin-bottom: 70px;
+}
+
+.collaboration_container {
+	margin-top: 20px;
+}
+
+#collaboration_slider .swiper-wrapper{
+	display: flex;
+}
+
+#collaboration_slider {
+	position: relative;
+	padding-bottom: 50px;
+	overflow-x: hidden;
+	text-align: left;
+}
+#collaboration_slider .swiper .swiper-slide{
+	width: 300px;
+	user-select: none;
+}
+
+#collaboration_slider .swiper .swiper-slide span{
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 10px;
+	color: #ededed;
+}
+
+#collaboration_slider .swiper .swiper-slide p{
+    font-size: 1.4em;
+    font-weight: 400;
+	margin: 20px 0 10px 0;
+    color: #ededed;
+} 
+#collaboration_slider .swiper .swiper-slide span.ss{
+	font-size: 1em;
+	color: #ededed;
+	display: block;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+#collaboration_slider .swiper .swiper-slide a{
+	position: relative;
+	display: block;
+	font-size: 0.875em;
+	color: #ededed;
+	width: fit-content;
+
+	padding: 10px 30px 10px 20px;
+	margin-right: 30px;
+	border: 1px solid rgba(255,255,255,.4);
+	border-radius: 10px;
+
+	overflow: hidden;
+	transition: color 0.4s ease;
+}
+
+#collaboration_slider .swiper .swiper-slide a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color:  rgba(255,255,255,.4);
+    transition: height 0.4s ease;
+    z-index: -1;
+}
+
+#collaboration_slider .swiper .swiper-slide a:hover::before {
+    height: 100%;
+}
+#collaboration_slider .swiper .swiper-slide a:hover {
+	color: #ececec;
+	font-weight: 900;
+}
+
+#collaboration_slider .swiper .swiper-slide a::after{
+	content: "";
+	position: absolute;
+	right: 10px;
+	background: url(../image/btn_arrow_right.png) no-repeat bottom -1px right;
+	background-size: 20px;
+	width: 20px;
+	height: 20px;
+}
+
+#collaboration_slider .swiper .swiper-slide a.web{
+	display: inline-block;
+	padding: 10px 30px 10px 20px;
+	margin-right: 30px;
+	border: 1px solid rgba(255,255,255,.4);
+} 
+
+#collaboration_slider .swiper .swiper-slide a.Source{
+	display: inline-block;
+	padding: 10px 30px 10px 20px;
+	border: 1px solid  rgba(255,255,255,.4);
+} 
+#collaboration_slider .swiper {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+#collaboration_slider .swiper .swiper-slide {
+	width: 100%;
+}
+/* #collaboration_slider .swiper .swiper-slide .view{
+	width: 320px;
+} */
+/* #collaboration_slider .swiper .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 10px;
+} */
+
+#collaboration_slider .swiper .swiper-scrollbar{
+	width: 100%;
+    bottom: -50px;
+}
+
+#collaboration_slider .swiper .swiper-scrollbar-drag {
+	background-color: #fff;
+}

@@ -22,23 +22,16 @@
 	<link rel="icon" type="image/png" href="./image/mainfavicon.png">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
-	<script src="js/main.js"></script>
+</head>
 
+<body>
 	<div class="wraper">
-
 		<header>
 			<div class="header_inner">
 				<div class="backPage">
 					<a href="../index.html" target="blank">a</a>
 				</div>
 			</div>
-
 		</header>
 
 		<div id="page2" class="page">
@@ -47,8 +40,138 @@
 					<strong>Project<br>List</strong>
 				</div>
 
+				<!-- 메인프로젝트 - 텍스트형 슬라이더 -->
+				<div id="collaborationProject" class="page">
+					<div class="collaborationProject_inner">
+						<div class="sub_title">
+							<span>- Work Projects</span>
+						</div>
+						<div class="collaboration_container">
+							<div id="collaboration_slider">
+								<div class="swiper collaborationSwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<span>Work 01</span>
+											<p>CRM-고객관리시스템<br> </p>
+											<span class="ss">
+												<span class="ss">
+													기간: 3~4개월<br>
+													역할: 기획, 디자인 및 UI 구현, 프론트엔드 개발, API 연동, 유지보수<br>
+													기술스택: React, TypeScript, SCSS<br>
+													담당 기능: 리스트/상세/수정/파일 처리 UI 구현<br>
+													문제 해결: 단계별 모달 분기 로직 개선, 상태 관리 및 예외 케이스 대응<br>
+													성과: 비즈니스 로직 개선
+												</span>
+
+										</div>
+										<div class="swiper-slide">
+											<span>Resource1</span>
+											<p>Parallax UI 예제<br> </p>
+											<span class="ss">
+												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
+										</div>
+										<div class="swiper-slide">
+											<span>Resource1</span>
+											<p>Parallax UI 예제<br> </p>
+											<span class="ss">
+												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
+										</div>
+										<div class="swiper-slide">
+											<span>Resource1</span>
+											<p>Parallax UI 예제<br> </p>
+											<span class="ss">
+												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
+										</div>
+										<div class="swiper-slide">
+											<span>Resource1</span>
+											<p>Parallax UI 예제<br> </p>
+											<span class="ss">
+												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
+										</div>
+										<div class="swiper-slide">
+											<span>Resource1</span>
+											<p>Parallax UI 예제<br> </p>
+											<span class="ss">
+												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
+										</div>
+										<div class="swiper-slide">
+											<span>Resource1</span>
+											<p>Parallax UI 예제<br> </p>
+											<span class="ss">
+												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
+										</div>
+									</div>
+									<div class="swiper-scrollbar collaboration-scrollbar"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+
+				<!-- 메인프로젝트 슬라이더 -->
+				<!-- <section id="mainProject" class="page main-project">
+					<div class="main_project_inner">
+						<p class="sub_title">Main Project</p>
+						<strong>CRM</strong>
+
+						<div class="crm_project_wrap">
+							<div class="crm_image_area">
+								<div class="swiper crmSwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="./image/crm_main.jpg" alt="CRM 메인 화면">
+										</div>
+										<div class="swiper-slide">
+											<img src="./image/crm_main.jpg" alt="CRM 고객 리스트 화면">
+										</div>
+										<div class="swiper-slide">
+											<img src="./image/crm_main.jpg" alt="CRM 상세 화면">
+										</div>
+										<div class="swiper-slide">
+											<img src="./image/crm_main.jpg" alt="CRM 파일 처리 화면">
+										</div>
+										<div class="swiper-slide">
+											<img src="./image/crm_main.jpg" alt="CRM 모달 분기 화면">
+										</div>
+										<div class="swiper-slide">
+											<img src="./image/crm_main.jpg" alt="CRM 유지보수 화면">
+										</div>
+									</div>
+
+									<div class="crm_prev"></div>
+									<div class="crm_next"></div>
+									<div class="swiper-pagination crm_pagination"></div>
+								</div>
+							</div>
+
+							<div class="crm_text_area">
+								<p class="crm_project_name" id="crmProjectName">CRM 고객관리 시스템</p>
+								<p class="crm_project_role" id="crmProjectRole">역할 : 프론트엔드 개발, UI 구현, API 연동</p>
+
+								<div class="crm_project_stack" id="crmProjectStack">
+									<img src="./image/white_React_1.png" alt="React">
+									<img src="./image/white_ts_1.png" alt="TypeScript">
+									<img src="./image/white_sass_1.png" alt="SCSS">
+									<img src="./image/Layer_1.png" alt="Git">
+								</div>
+
+								<div class="crm_project_desc">
+									<p id="crmProjectDesc">
+										고객 및 프로젝트 현황을 확인할 수 있는 메인 화면입니다.<br>
+										주요 정보 접근 구조와 상태 흐름을 확인할 수 있도록 구성했습니다.
+									</p>
+								</div>
+
+								<a href="#" class="crm_detail_btn">상세보기</a>
+							</div>
+						</div>
+					</div>
+				</section> -->
+				<!-- ------------- -->
+
 				<div class="sub_title">
-					<span>- ProjectList</span>
+					<span>- Personal Projects</span>
 				</div>
 
 
@@ -57,6 +180,30 @@
 
 						<ul class="left">
 							<li>1</li>
+							<ul>
+								<li>Onebite-books</li>
+								<li>#Next.js<br>
+									반응형 PC & Mobile</li>
+							</ul>
+						</ul>
+
+						<ul class="right">
+							<li>Next Project</li>
+							<ul>
+								<li>도서리스트, 상세 화면, 검색 기능을 구현한 프로젝트입니다. 라우팅 구조와 데이터 렌더링 흐름을 중심으로 화면을 구성했습니다.
+								</li>
+								<li><a href="https://onebite-books-page-mauve-nine.vercel.app/" target="blank">바로가기</a>
+								</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+
+				<div class="skils_list">
+					<div class="sklis_list_inner">
+
+						<ul class="left">
+							<li>2</li>
 							<ul>
 								<li>Emotion diary</li>
 								<li>#React<br>
@@ -78,7 +225,7 @@
 					<div class="sklis_list_inner">
 
 						<ul class="left">
-							<li>2</li>
+							<li>3</li>
 							<ul>
 								<li>Shop</li>
 								<li>#React<br>
@@ -105,7 +252,7 @@
 					<div class="sklis_list_inner">
 
 						<ul class="left">
-							<li>3</li>
+							<li>4</li>
 							<ul>
 								<li>Logitech</li>
 								<li>#React<br>
@@ -128,7 +275,7 @@
 					<div class="sklis_list_inner">
 
 						<ul class="left">
-							<li>4</li>
+							<li>5</li>
 							<ul>
 								<li>Room Info</li>
 								<li>Vue<br>
@@ -150,7 +297,7 @@
 					<div class="sklis_list_inner">
 
 						<ul class="left">
-							<li>5</li>
+							<li>6</li>
 							<ul>
 								<li>LG BESTSHOP</li>
 								<li>#HTML #CSS #JS <br>
@@ -240,7 +387,8 @@
 											<span class="ss">
 												Parallax UI 구현 및 React Router <br>라이브러리 활용 예제</span>
 											<a href="https://cdmi4613.github.io/opensource1" target="blank"
-												class="web">Web 바로가기</a>
+												class="web">Web
+												바로가기</a>
 											<a href="https://github.com/cdmi4613/opensource1" target="blank"
 												class="Source">Source 바로가기</a>
 
@@ -257,7 +405,8 @@
 											<p>AJAX 예제<br> </p>
 											<span class="ss">React를 이용한 AJAX 방식으로 React Axios <br>라이브러리를 활용한 예제</span>
 											<a href="https://cdmi4613.github.io/opensource2" target="blank"
-												class="web">Web 바로가기</a>
+												class="web">Web
+												바로가기</a>
 											<a href="https://github.com/cdmi4613/opensource2" target="blank"
 												class="Source">Source 바로가기</a>
 
@@ -274,7 +423,8 @@
 											<p>Video API 예제<br> </p>
 											<span class="ss">JavaScript Video API를 접목해서 <br>React로 build한 예제</span>
 											<a href="https://cdmi4613.github.io/opensource3" target="blank"
-												class="web">Web 바로가기</a>
+												class="web">Web
+												바로가기</a>
 											<a href="https://github.com/cdmi4613/opensource3" target="blank"
 												class="Source">Source 바로가기</a>
 
@@ -292,7 +442,8 @@
 											<span class="ss">React 18과 Hook 함수를 활용,<br>JavaScript sort() 메서드를 사용한
 												예제</span>
 											<a href="https://cdmi4613.github.io/opensource4" target="blank"
-												class="web">Web 바로가기</a>
+												class="web">Web
+												바로가기</a>
 											<a href="https://github.com/cdmi4613/opensource4" target="blank"
 												class="Source">Source 바로가기</a>
 
@@ -559,3 +710,12 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+	<script src="js/main.js"></script>
+</body>
